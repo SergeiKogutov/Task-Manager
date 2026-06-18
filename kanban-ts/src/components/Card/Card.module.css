@@ -1,0 +1,82 @@
+/* src/components/Card/Card.module.css */
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    cursor: grab;
+    transition: box-shadow 0.2s, transform 0.1s;
+    border: 1px solid transparent;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #e0e0e0;
+  }
+  
+  .card:active {
+    cursor: grabbing;
+    transform: scale(0.98);
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .cardTitle {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #172b4d;
+    word-break: break-word;
+    flex: 1;
+  }
+  
+  .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    color: #6b778c;
+    transition: color 0.2s;
+    flex-shrink: 0;
+  }
+  
+  .deleteButton:hover {
+    color: #f44336;
+  }
+  
+  .cardDescription {
+    margin: 8px 0 12px 0;
+    font-size: 13px;
+    color: #6b778c;
+    word-break: break-word;
+    line-height: 1.4;
+  }
+  
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .priorityBadge {
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  
+  .createdAt {
+    font-size: 11px;
+    color: #6b778c;
+  }
